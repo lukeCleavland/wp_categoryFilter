@@ -6,7 +6,7 @@ Description: Add meta box for post-page category filter
 Version: 1.0.0
 Author: Luke Cleavland
 */
-
+defined('ABSPATH') OR exit;
 function custom_page_fields($object)
 {
   wp_nonce_field(basename(__FILE__), "category-nonce");
